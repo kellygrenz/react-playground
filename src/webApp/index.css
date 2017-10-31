@@ -1,0 +1,145 @@
+
+body {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23333333' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  width: 95vw; 
+  height: auto;
+  padding: 30px;
+}
+
+.nav  {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  background: #E74C3C;
+  color: #fff;
+  font-family: Helvetica;
+  
+}
+
+.link {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+
+}
+ 
+.link:hover {
+border-bottom: 2px solid white;
+}
+
+
+
+.jumbotron {
+  background: #C5D3E2;
+  padding: 40px;
+  text-align: center;
+  border: 2px dotted white;
+  border-radius: 5px;
+}
+
+h3 {
+  color: #2C3E50;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+  font-size: 30px;
+  color: #E74C3C;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+p {
+  color: white; 
+  font-style: italic;
+  font-size: 25px;
+  text-align: center;
+}
+
+.about {
+  border: 2px solid white;
+  background: #fff;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 5px #6C7A89;
+ 
+}
+
+.about p {
+  color: black;
+}
+
+
+.services {
+  border: 2px solid white;
+  background: #fff;
+  padding: 30px 20px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 5px #6C7A89;
+
+  
+}
+
+.service-card-container {
+  display: flex;
+}
+
+.services p {
+  color: black;
+}
+
+.service-card {
+  background: #E4F1FE;
+  display: flex;
+  width: 25%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  margin-right: 15px;
+}
+
+.service-icon {
+  font-size: 50px;
+  color: #fff;
+}
+
+.icon-circle {
+  border-radius: 50px;
+  background-color: #4DAF7C;
+  width: 75px;
+  height: 75px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card-container {
+  display: flex;
+}
+
+.product-card {
+   background: #22313F;
+  display: flex;
+  width: 33.33%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  margin-right: 15px;
+}
+
+.products {
+  border: 2px solid white;
+  background: #fff;
+  padding-left: 20px;
+}
+
+.products p {
+  color: black;
+}
+
