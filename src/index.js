@@ -9,8 +9,9 @@ import ReactDOM from 'react-dom'
 // import MappingAndFiltering from './mappingAndFiltering/MappingAndFiltering'
 import registerServiceWorker from './registerServiceWorker'
 // import ChatterApp from './ChatterApp/ChatterApp'
-import RestaurantApp from './MexRestaurant/TexMexApp'
+// import RestaurantApp from './MexRestaurant/TexMexApp'
 // import SearchApp from './searchApp/App'
+import TexMexApp from './texMexSolution/App'
 
-ReactDOM.render(<RestaurantApp />, document.getElementById('root'))
+ReactDOM.render(<TexMexApp />, document.getElementById('root'))
 registerServiceWorker()
