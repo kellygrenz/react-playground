@@ -6,9 +6,11 @@ import ReactDOM from 'react-dom'
 // import App from './acmeApp/App'
 // import MonsterApp from './monsterMash/monsterApp'
 // import data from './acmeApp/data'
-import MappingAndFiltering from './mappingAndFiltering/MappingAndFiltering'
+// import MappingAndFiltering from './mappingAndFiltering/MappingAndFiltering'
 import registerServiceWorker from './registerServiceWorker'
-import ChatterApp from './ChatterApp/ChatterApp'
+// import ChatterApp from './ChatterApp/ChatterApp'
+import RestaurantApp from './MexRestaurant/TexMexApp'
+// import SearchApp from './searchApp/App'
 
-ReactDOM.render(<ChatterApp />, document.getElementById('root'))
+ReactDOM.render(<RestaurantApp />, document.getElementById('root'))
 registerServiceWorker()
