@@ -11,7 +11,9 @@ import registerServiceWorker from './registerServiceWorker'
 // import ChatterApp from './ChatterApp/ChatterApp'
 // import RestaurantApp from './MexRestaurant/TexMexApp'
 // import SearchApp from './searchApp/App'
-import TexMexApp from './texMexSolution/App'
+// import TexMexApp from './texMexSolution/App'
+// import App from './holidayShopping/App'
+import App from './ToDoList/ToDoApp'
 
-ReactDOM.render(<TexMexApp />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
 registerServiceWorker()

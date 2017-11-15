@@ -3,6 +3,8 @@ import data from '../MexRestaurant/DATA'
 import MenuList from './Menu'
 import SearchForm from './SearchForm'
 
+
+
 class MenuContainer extends Component {
   state = {
     menuItems: undefined,
@@ -18,13 +20,28 @@ class MenuContainer extends Component {
     this.setState({searchTerm: e.target.value})
   }
 
+  resetMenuList = () => {
+    this.setState({ menuItems: data.items, searchTerm: '' })
+  }
+
+  mildSpiceLevel = () => {
+    const mildFoods = this.state.menuItems.filter(item => {
+      return item.spiceLevel < 4
+    })
+    this.setState({ menuItems: mildFoods })
+  }
+
+
   updateMenuList = (e) => {
     alert('you are refreshing the page!')
     e.preventDefault()
     const updatedMenuItems = this.state.menuItems.filter(item => {
-      return item.name === this.state.searchTerm
+      const searchTerm = this.state.searchTerm.toLowerCase()
+      const menuItem = item.name.toLowerCase()
+      return menuItem.includes(searchTerm)
     })
     console.log(updatedMenuItems)
+    this.setState({ menuItems: updatedMenuItems })
   }
 
   render () {
@@ -33,6 +50,9 @@ class MenuContainer extends Component {
         <SearchForm
           handleSearchTermChange={this.handleSearchTermChange}
           updateMenuList={this.updateMenuList}
+          resetMenuList={this.resetMenuList}
+          searchTerm={this.state.searchTerm}
+          mildSpiceLevel={this.mildSpiceLevel}
         />
         {
           this.state.menuItems
