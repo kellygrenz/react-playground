@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import ToDoList from './ToDoList'
 import ToDoForm from './ToDoForm'
 
+const 
+
 class ListContainer extends Component {
   state = {
     toDos: undefined,
@@ -10,7 +12,11 @@ class ListContainer extends Component {
   }
 
   componentDidMount () {
-    const toDoArray = [{title: 'Finish coding homework', dueDate: '11/13/17', complete: false}, {title: 'Finish Laundry', dueDate: '11/14/17', complete: false}]
+    const toDoArray = [
+      {title: 'Finish coding homework', dueDate: '11/13/17', complete: true},  
+      {title: 'Finish Laundry', dueDate: '11/14/17', complete: false},
+      {title: 'React Reading', dueDate: '11/13/17', complete: true}
+    ]
     this.setState({ toDos: toDoArray})
   }
 

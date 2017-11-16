@@ -2,12 +2,9 @@ import React from 'react'
 
 const headerStyle = {
   container: {
-    
-    
     justifyContent: 'space-between',
- 
     alignItems: 'center',
-    
+    padding: 40
   },
 
   h1: {

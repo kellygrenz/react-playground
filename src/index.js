@@ -13,7 +13,9 @@ import registerServiceWorker from './registerServiceWorker'
 // import SearchApp from './searchApp/App'
 // import TexMexApp from './texMexSolution/App'
 // import App from './holidayShopping/App'
-import App from './ToDoList/ToDoApp'
+// import App from './ToDoList/ToDoApp'
+import App from './toDoSolution/App'
+// import App from './FilterMapReview/App'
 
 ReactDOM.render(<App />, document.getElementById('root'))
 registerServiceWorker()
