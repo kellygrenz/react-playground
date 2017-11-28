@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ToDo = ({title, dueDate, id, complete, markComplete}) => {
+const ToDo = ({title, dueDate, id, complete, markComplete, deleteToDo}) => {
   return (
     <div>
       <h2>Need To: {title}</h2>
@@ -13,6 +13,7 @@ const ToDo = ({title, dueDate, id, complete, markComplete}) => {
             : 'Mark as Complete'
         }
       </button>
+      <button onClick={deleteToDo} id={id}type='button'>Delete To Do</button>
     </div>
   )
 }

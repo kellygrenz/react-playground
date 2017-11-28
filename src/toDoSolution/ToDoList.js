@@ -18,10 +18,11 @@ const listStyle = {
   }
 }
 
-const ToDoList = ({toDos, title, markComplete}) => {
+const ToDoList = ({toDos, title, markComplete, deleteToDo}) => {
   return (
     <div style={listStyle.container}>
       <h2 style={listStyle.h2}>{title}</h2>
+      
       {
         ToDoList.length > 0
           ? toDos.map(toDo => {
@@ -31,6 +32,7 @@ const ToDoList = ({toDos, title, markComplete}) => {
               complete={toDo.complete}
               id={toDo.id}
               markComplete={markComplete}
+              deleteToDo={deleteToDo}
             />
           })
           : 'No ToDos'
@@ -42,7 +44,9 @@ const ToDoList = ({toDos, title, markComplete}) => {
 ToDoList.propTypes = {
   toDos: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
-  markComplete: PropTypes.func.isRequired
+  markComplete: PropTypes.func.isRequired,
+  resetToDos: PropTypes.func.isRequired,
+  deleteToDo: PropTypes.func.isRequired
 }
 
 export default ToDoList

@@ -1,14 +1,28 @@
 import React from 'react'
-import Link from './Link'
+import {
+  Link
+} from 'react-router-dom'
+
+const styles = {
+  link: {
+    color: '#fff',
+    textTransform: 'uppercase',
+    fontFamily: 'Oswald',
+    textDecoration: 'none'
+
+  }
+  
+}
 
 const NavigationBar = () => {
   return (
     <nav className='nav'>
 
-      <Link icon={'home'} name={' HOME'} />
-      <Link icon={'info'} name={' ABOUT'} />
-      <Link icon={'building-o'} name={' SERVICES'} />
-      <Link icon={'phone'} name={' CONTACT'} />
+      <Link style={styles.link} to='/'>Home</Link>
+      <Link style={styles.link} to='/about'>About</Link>
+      <Link style={styles.link} to='/services'>Services</Link>
+      <Link style={styles.link} to='/products'>Products</Link>
+      <Link style={styles.link} to='/contact'>Contact</Link>
 
     </nav>
   )

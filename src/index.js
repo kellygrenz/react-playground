@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // import SmartApp from './smartApp/App'
 
+// import App from './router-introduction/App'
 // import App from './webApp/App'
 // import App from './acmeApp/App'
 // import MonsterApp from './monsterMash/monsterApp'
@@ -14,8 +15,10 @@ import registerServiceWorker from './registerServiceWorker'
 // import TexMexApp from './texMexSolution/App'
 // import App from './holidayShopping/App'
 // import App from './ToDoList/ToDoApp'
-import App from './toDoSolution/App'
+// import App from './toDoSolution/App'
 // import App from './FilterMapReview/App'
+// import App from './router-introduction/App'
+import App from './starbucksAnalysis/App'
 
 ReactDOM.render(<App />, document.getElementById('root'))
 registerServiceWorker()
